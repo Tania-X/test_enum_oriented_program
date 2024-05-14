@@ -7,9 +7,13 @@ import com.max.test_enum_oriented_program.result.HttpResult;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class OrientedQueryHandler<T extends IFeignReqBean> implements IQueryHandler<T> {
+public class EnumQueryHandler<T extends IFeignReqBean> implements IQueryHandler<T> {
 
-  protected ProtocolEnum2 protocolEnum2;
+  private final ProtocolEnum2 protocolEnum2;
+
+  public EnumQueryHandler(ProtocolEnum2 protocolEnum2) {
+    this.protocolEnum2 = protocolEnum2;
+  }
 
   @Override
   public HttpResult handleQuery(T t) {

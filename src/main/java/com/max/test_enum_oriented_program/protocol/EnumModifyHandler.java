@@ -6,9 +6,13 @@ import com.max.test_enum_oriented_program.result.HttpResult;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class OrientedModifyHandler<T extends IFeignReqBean> implements IModifyHandler<T> {
+public class EnumModifyHandler<T extends IFeignReqBean> implements IModifyHandler<T> {
 
-  protected ProtocolEnum2 protocolEnum2;
+  private final ProtocolEnum2 protocolEnum2;
+
+  public EnumModifyHandler(ProtocolEnum2 protocolEnum2) {
+    this.protocolEnum2 = protocolEnum2;
+  }
 
   @Override
   public HttpResult handleModify(T t) {

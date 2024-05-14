@@ -1,8 +1,11 @@
 package com.max.test_enum_oriented_program.protocol.action;
 
-@FunctionalInterface
-public interface OriginalAction<T, U> {
+import com.max.test_enum_oriented_program.protocol.bean.IFeignReqBean;
+import com.max.test_enum_oriented_program.result.HttpResult;
 
-  U doOriginalAction(T t);
+@FunctionalInterface
+public interface OriginalModifyAction<T extends IFeignReqBean> {
+
+  HttpResult doOriginalAction(T t);
 
 }

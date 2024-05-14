@@ -1,4 +1,4 @@
-package com.max.test_enum_oriented_program.protocol.bean.protocol;
+package com.max.test_enum_oriented_program.protocol.bean.protocol.resp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

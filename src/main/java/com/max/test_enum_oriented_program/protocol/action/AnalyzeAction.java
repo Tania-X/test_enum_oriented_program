@@ -1,8 +1,11 @@
 package com.max.test_enum_oriented_program.protocol.action;
 
-@FunctionalInterface
-public interface SecondaryAction<T, U> {
+import com.max.test_enum_oriented_program.protocol.bean.IFeignRespBean;
+import com.max.test_enum_oriented_program.result.HttpResult;
 
-  U doSecondaryAction(T t);
+@FunctionalInterface
+public interface AnalyzeAction<T extends IFeignRespBean> {
+
+  HttpResult doAnalyzeAction(T t);
 
 }
