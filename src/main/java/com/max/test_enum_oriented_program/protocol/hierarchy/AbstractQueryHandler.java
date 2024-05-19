@@ -8,7 +8,8 @@ import com.max.test_enum_oriented_program.result.HttpResult;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public abstract class AbstractQueryHandler<T extends IFeignReqBean, U extends IFeignRespBean> implements IQueryHandler<T> {
+public abstract class AbstractQueryHandler<T extends IFeignReqBean, U extends IFeignRespBean> implements
+    IQueryHandler<T> {
 
   protected ProtocolEnum1 protocolEnum1;
 

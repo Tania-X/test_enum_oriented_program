@@ -1,7 +1,7 @@
 package com.max.test_enum_oriented_program.protocol;
 
 /**
- * tagging interface
+ * marker interface provided to handle query or modification quests
  */
 public interface IProcessHandler {
 

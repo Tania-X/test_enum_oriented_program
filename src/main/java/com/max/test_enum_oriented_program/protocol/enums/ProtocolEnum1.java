@@ -14,17 +14,17 @@ public enum ProtocolEnum1 {
   ;
 
   /**
-   * 信息发出方
+   * message sender
    */
   private final String sender;
 
   /**
-   * 信息接收方
+   * message receiver
    */
   private final String receiver;
 
   /**
-   * 协议描述
+   * protocol description
    */
   private final String protocolDesc;
 

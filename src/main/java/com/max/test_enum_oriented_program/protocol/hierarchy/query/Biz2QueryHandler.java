@@ -30,4 +30,5 @@ public class Biz2QueryHandler extends AbstractQueryHandler<FeignReq2Bean, FeignR
     // do handle resultBean with this httpResult instance
     return httpResult;
   }
+
 }

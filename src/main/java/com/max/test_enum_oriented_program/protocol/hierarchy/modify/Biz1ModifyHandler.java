@@ -22,4 +22,5 @@ public class Biz1ModifyHandler extends AbstractModifyHandler<FeignReq1Bean> {
   protected HttpResult doHandleModify(FeignReq1Bean feignReq1Bean) {
     return feignHandler.modify1(feignReq1Bean);
   }
+
 }
