@@ -19,7 +19,7 @@ import lombok.Getter;
 public enum ProtocolEnum2 {
 
   /**
-   * 协议A
+   * protocol A
    */
   BIZ_A("sender 1", "receiver 1", "protocol 1",
       (bean) -> {
@@ -28,7 +28,7 @@ public enum ProtocolEnum2 {
       }, (bean) -> null, (bean) -> null, FeignReq1Bean.class, null),
 
   /**
-   * 协议B
+   * protocol B
    */
   BIZ_B("sender 2", "receiver 2", "protocol 2",
       bean -> null,
@@ -45,42 +45,42 @@ public enum ProtocolEnum2 {
   ;
 
   /**
-   * 信息发出方
+   * message sender
    */
   private final String sender;
 
   /**
-   * 信息接收方
+   * message receiver
    */
   private final String receiver;
 
   /**
-   * 协议描述
+   * protocol description
    */
   private final String protocolDesc;
 
   /**
-   * 请求处理方法
+   * request handler method
    */
   private final OriginalModifyAction<? super IFeignReqBean> originalModifyAction;
 
   /**
-   * 响应处理方法
+   * response handler method
    */
   private final OriginalQueryAction<? super IFeignReqBean, ? super IFeignRespBean> originalQueryAction;
 
   /**
-   * 响应结果处理方法
+   * response's result handler method
    */
   private final AnalyzeAction<? super IFeignRespBean> analyzeAction;
 
   /**
-   * 请求类class信息
+   * request class info(be of supplementary use)
    */
   private final Class<?> reqClazz;
 
   /**
-   * 响应类class信息
+   * response class info(be of supplementary use)
    */
   private final Class<?> respClazz;
 

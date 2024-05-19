@@ -6,6 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * http result construct
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
